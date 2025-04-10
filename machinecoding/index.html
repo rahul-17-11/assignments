@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formSubmit">
+      <input name="0" id="input0" type="number" />
+      <input name="1" id="input1" type="number" />
+      <input name="2" id="input2" type="number" />
+      <input name="3" id="input3" type="number" />
+      <input name="4" id="input4" type="number" />
+      <input name="5" id="input5" type="number" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  <script>
+    let inputs = document.getElementsByClassName("inputs");
+
+    let formSubmit = document.getElementById("formSubmit");
+
+    let input0 = document.getElementById("input0");
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+    let input3 = document.getElementById("input3");
+    let input4 = document.getElementById("input4");
+    let input5 = document.getElementById("input5");
+
+    input0.addEventListener("keypress", function () {
+      return input1.focus();
+    });
+    input1.addEventListener("keypress", function () {
+      return input2.focus();
+    });
+    input2.addEventListener("keypress", function () {
+      return input3.focus();
+    });
+    input3.addEventListener("keypress", function () {
+      return input4.focus();
+    });
+    input4.addEventListener("keypress", function () {
+      return input5.focus();
+    });
+    input5.addEventListener("keypress", function () {
+      return input5.focus();
+    });
+
+    formSubmit.addEventListener("submit", handleSubmit);
+
+    function handleSubmit(e) {
+      e.preventDefault();
+    }
+  </script>
+</html>
