@@ -81,4 +81,11 @@ function avgRatings(data) {
   return ratingSum / data.length;
 }
 
-console.log(avgRatings(data));
+// console.log(avgRatings(data));
+
+function sortMovie(data) {
+  let ans = data.sort((a, b) => a.rating - b.rating);
+  return ans;
+}
+
+console.log(sortMovie(data));
