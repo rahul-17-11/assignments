@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ImSpinner } from "react-icons/im";
 import axios from "axios";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 
   useEffect(() => {
     fetchProducts();
+    return ()=>{}
   }, [pageNum]);
 
   return (
@@ -39,7 +41,7 @@ function App() {
       <h1 className="text-2xl font-bold mb-6">Product List</h1>
 
       {isLoading ? (
-        <p className="text-lg text-gray-600 font-semibold">Loading...</p>
+        <p className="text-lg text-gray-600 font-semibold animate-spin"><ImSpinner /></p>
       ) : (
         products.map((product) => (
           <div
