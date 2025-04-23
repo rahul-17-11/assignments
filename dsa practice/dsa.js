@@ -287,3 +287,5 @@ function maxSum(arr) {
 // console.log(sum(8472));
 
 // question 16
+
+function fibo(n) {}
