@@ -136,11 +136,11 @@
 
 // question 8
 
-function maxSum(arr) {
-  let i = 0,
-    j = 0;
-  let sum = 0;
-}
+// function maxSum(arr) {
+//   let i = 0,
+//     j = 0;
+//   let sum = 0;
+// }
 
 // question 9
 
@@ -249,11 +249,7 @@ function maxSum(arr) {
 //     l--;
 //   }
 
-//   if (check == newStr) {
-//     return true;
-//   } else {
-//     return false;
-//   }
+//   return check == newStr
 // }
 
 // console.log(palindrome("A man, a plan, a canal: Panama"));
@@ -288,4 +284,41 @@ function maxSum(arr) {
 
 // question 16
 
-function fibo(n) {}
+// function fibo(n) {}
+
+// function generateKeyFromEmail(email) {
+//   let numStr = "";
+//   let divide = email.split("@");
+//   let first = divide[0];
+//   let second = divide[1];
+
+//   for (let i = 0; i < first.length; i++) {
+//     numStr += first[i].charCodeAt(0);
+//   }
+//   numStr = numStr
+//     .split("")
+//     .sort((a, b) => b - a)
+//     .join("");
+
+//   let vowels = new Set(["a", "e", "i", "o", "u"]);
+//   let j = 0;
+//   let str1 = "";
+//   let str2 = "";
+
+//   while (j < second.length) {
+//     if (vowels.has(second[j])) {
+//       str1 += second[j];
+//     } else {
+//       str2 += second[j];
+//     }
+//     j++;
+//   }
+
+//   let domain = str1 + str2;
+//   domain = domain.split("").reverse().join("");
+
+//   return domain + "#" + numStr;
+// }
+
+// let email = "abc12@domain.com";
+// console.log(generateKeyFromEmail(email)); // output : mc.nmdoiao#9999987540
