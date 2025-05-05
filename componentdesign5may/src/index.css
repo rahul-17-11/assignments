@@ -1,0 +1,41 @@
+.dashboard {
+  border: 2px solid salmon;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+}
+.message {
+  color: blueviolet;
+}
+.login {
+  background: rgb(50, 129, 255);
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 22px;
+}
+.logout {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  background: rgb(255, 91, 50);
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 2px double greenyellow;
+  padding: 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.avatar {
+  position: absolute;
+}

@@ -1,5 +1,11 @@
+import CharacterGallery from "./components/CharacterGallery";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <CharacterGallery />
+    </>
+  );
 }
 
 export default App;
